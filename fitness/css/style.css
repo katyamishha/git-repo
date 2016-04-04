@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
+
+.navbar-default{
+	background: #202020;
+	margin-bottom: 0;
+	border: none;
+}
+.navbar-default .navbar-brand{
+	padding-top: 40px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	color: #fff;
+}
+.navbar-default .navbar-brand:hover{
+	color: #fff;
+}
+.navbar-default .navbar-nav{
+	height: 100px;
+}
+.navbar-default .navbar-nav li{
+	padding-top: 25px;
+}
+.navbar-default .navbar-nav li a{
+	text-transform: uppercase;
+	padding: 10px 15px;
+	color: #fff;
+}
+.active-link a,
+.navbar-default .navbar-nav li:hover a{
+	background: #e25050;
+	color: #fff;
+}
+.slider-bg{
+	background: url(../img/slide2.jpg) no-repeat top center;
+	height: 500px;
+}
+.phone{
+	margin: 0;
+	font-family: 'Oswald', sans-serif;
+	color: #fff;
+	background: #e25050;
+	padding-right: 10px;
+}
+.phone span{
+	top: 0;
+	background: #bd4141;
+	padding: 10px;
+}
+.carousel-inner .item{
+	background: rgba(0,0,0,0);
+	height: 500px;
+}
+.carousel-control.left,
+.carousel-control.right{
+	background-image:linear-gradient(to right,rgba(0,0,0,0.0000) 0,rgba(0,0,0,.0) 100%);
+}
+.carousel-control.left{
+	background: url(../img/prev.png) no-repeat left 240px ;
+}
+.carousel-control.right{
+	background: url(../img/next.png) no-repeat right 240px;
+}
+.carousel-inner .item .carousel-caption{
+	top: 20%;
+}
+#carousel-example-generic .carousel-indicators{
+	bottom: 40px;
+	display: none;
+}
+.carousel-caption span{
+	float: left;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: 'Oswald', sans-serif;
+	font-size: 12px;
+	padding: 10px 15px;
+	background: #e25050;
+}
+.carousel-caption h3{
+	clear: both;
+	float: left;
+	margin-top: 2px;
+	text-transform: uppercase;
+	color: #fefefe;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	padding: 10px 15px;
+	background: #232322;
+}
+.carousel-caption h4{
+	clear: both;
+	float: left;
+	margin-top: -8px;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: 'Oswald', sans-serif;
+	font-size: 18px;
+	padding: 10px 15px;
+	background: #232322;
+}
