@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 
 .navbar-default{
@@ -9,6 +11,7 @@
 }
 .navbar-default .navbar-brand{
 	padding-top: 40px;
+	font-size: 22px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 800;
 	color: #fff;
@@ -23,6 +26,7 @@
 	padding-top: 25px;
 }
 .navbar-default .navbar-nav li a{
+	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
 	padding: 10px 15px;
 	color: #fff;
@@ -34,7 +38,7 @@
 }
 .slider-bg{
 	background: url(../img/slide2.jpg) no-repeat top center;
-	height: 500px;
+	height: 580px;
 }
 .phone{
 	margin: 0;
@@ -48,28 +52,25 @@
 	background: #bd4141;
 	padding: 10px;
 }
-.carousel-inner .item{
+.slider-bg .carousel-inner .item{
 	background: rgba(0,0,0,0);
 	height: 500px;
 }
-.carousel-control.left,
-.carousel-control.right{
-	background-image:linear-gradient(to right,rgba(0,0,0,0.0000) 0,rgba(0,0,0,.0) 100%);
-}
-.carousel-control.left{
+
+.slider-bg .carousel-control.left{
 	background: url(../img/prev.png) no-repeat left 240px ;
 }
-.carousel-control.right{
+.slider-bg .carousel-control.right{
 	background: url(../img/next.png) no-repeat right 240px;
 }
-.carousel-inner .item .carousel-caption{
+.slider-bg .carousel-inner .item .carousel-caption{
 	top: 20%;
 }
-#carousel-example-generic .carousel-indicators{
+.slider-bg #carousel-example-generic .carousel-indicators{
 	bottom: 40px;
 	display: none;
 }
-.carousel-caption span{
+.slider-bg .carousel-caption span{
 	float: left;
 	text-transform: uppercase;
 	color: #fff;
@@ -78,7 +79,7 @@
 	padding: 10px 15px;
 	background: #e25050;
 }
-.carousel-caption h3{
+.slider-bg .carousel-caption h3{
 	clear: both;
 	float: left;
 	margin-top: 2px;
@@ -90,7 +91,7 @@
 	padding: 10px 15px;
 	background: #232322;
 }
-.carousel-caption h4{
+.slider-bg .carousel-caption h4{
 	clear: both;
 	float: left;
 	margin-top: -8px;
@@ -101,3 +102,211 @@
 	padding: 10px 15px;
 	background: #232322;
 }
+.info{
+	padding-top: 40px;
+	text-align: center;
+}
+.info-title h3{
+	text-transform: uppercase;
+	font-size: 28px;
+	color: #202020;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+}
+.info-title h3 span{
+	color: #e25050;
+}
+.info-title p{
+	margin-top: 15px;
+	font-family: 'Droid Serif', serif;
+	font-style: italic;
+	font-size: 16px;
+	color: #a2a2a2;
+}
+.info .row{
+	margin-top: 30px;
+}
+.info .row h5{
+	padding: 10px;
+	padding-left: 30px;
+	text-align: left;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	color: #202020;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.info .row .strech{
+	background: url(../img/icon1.png) no-repeat left center; 
+}
+.info .row .Cardio{
+	background: url(../img/icon2.png) no-repeat left center;
+	padding-left: 40px; 
+}
+.info .row .Aquatic{
+	background: url(../img/icon3.png) no-repeat left center; 
+}
+.info .row .Mind{
+	background: url(../img/icon4.png) no-repeat left center; 
+}
+.info .row p{
+	text-align: left;
+	color: #777777;
+	font-size: 13px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.trainers{
+	margin-top: 60px;
+	padding-top: 40px;
+	height: 530px;
+	background: url(../img/base.jpg) no-repeat top center;
+}
+.trainers h4{
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+}
+.trainers hr{
+	margin: 10px auto;
+	width: 4%;
+}
+.trainers .row{
+	margin-top: 55px;
+}
+.trainers .row .caption{
+	margin-top: 0;
+	box-sizing: border-box;
+	padding: 10px;
+	background: #fff;
+	width: 260px;
+	text-align: left;
+}
+.caption h5{
+	padding: 10px 0 0 10px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	color: #202020;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.trainers .caption p{
+	padding: 0 10px;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	color: #afafaf;
+}
+.gallery{
+	padding-top: 45px;
+	margin-bottom: 50px;
+}
+.gallery hr{
+	border: 0.5px solid #202020;
+	width: 4%;
+	margin-top: 0;
+}
+.gallery h4{
+	text-align: center;
+	color: #202020;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+}
+.gallery p{
+	text-align: center;
+	margin: 0 auto;
+	width: 45%;
+	margin-bottom: 60px;
+	color: #777777;
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+}
+.gallery .row{
+	margin-top: 30px;
+}
+.pricing{
+	background: #e25050;
+	height: 390px;
+	color: #fff;
+}
+.pricing h4{
+	padding-top: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+}
+.pricing hr{
+	margin: 10px auto;
+	width: 4%;
+}
+.pricing .row{
+	margin-top: 40px;
+}
+.pricing img{
+	margin-left: 20px;
+}
+.pricing h5{
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+}
+.pricing h2{
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	font-size: 36px;
+}
+.pricing h2 sup{
+	font-size: 14px;
+	top: -1.5em;
+}
+.pricing ul li{
+	background: url(../img/tick.png) no-repeat 0 5px;
+	padding-left: 15px;
+	list-style: none;
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+}
+.pricing .col-md-4{
+	width: 30%;
+	margin: 2%;
+}
+.pricing .standart{margin-left: 0;}
+.pricing .business{margin-right: 0;}
+.standart,.business{
+	background: #d14343;
+}
+.pricing .col-md-3{
+	padding-left: 30px;
+	margin-bottom: 20px;
+}
+.advanced{
+	border: 2px solid #fff;
+}
+.pricing .col-md-9{
+	padding-top: 20px;
+}
+.partners .carousel-inner .item{
+	padding-top: 50px;
+	height: 300px;
+}
+.partners h4{
+	text-align: center;
+	color: #202020;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+}
+.partners hr{
+	margin: 10px auto;
+	width: 4%;
+	border: 1px solid #202020
+}
+
