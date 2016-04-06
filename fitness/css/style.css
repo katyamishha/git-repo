@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
 
 
 .navbar-default{
@@ -292,9 +292,9 @@
 .pricing .col-md-9{
 	padding-top: 20px;
 }
-.partners .carousel-inner .item{
+.partners{
 	padding-top: 50px;
-	height: 300px;
+	height: 200px;
 }
 .partners h4{
 	text-align: center;
@@ -310,3 +310,168 @@
 	border: 1px solid #202020
 }
 
+.nbs-flexisel-container {
+		margin-top: 40px;
+    position:relative;
+    max-width:100%;
+}
+.nbs-flexisel-ul {
+    position:relative;
+    width:99999px;
+    margin:0px;
+    padding:0px;
+    list-style-type:none;   
+    text-align:center;  
+}
+
+.nbs-flexisel-inner {
+    overflow:hidden;
+    float:left;
+    width:100%;
+    background:#fcfcfc;
+    background: #fcfcfc -moz-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* FF3.6+ */
+    background: #fcfcfc -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(100%,#eee)); /* Chrome,Safari4+ */
+    background: #fcfcfc -webkit-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* Chrome10+,Safari5.1+ */
+    background: #fcfcfc -o-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* Opera11.10+ */
+    background: #fcfcfc -ms-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* IE10+ */
+    background: #fcfcfc linear-gradient(top, #fcfcfc 0%, #eee 100%); /* W3C */ 
+}
+
+.nbs-flexisel-item {
+    float:left;
+    margin:0px;
+    padding:0px;
+    cursor:pointer;
+    position:relative;
+    line-height:0px;
+}
+.nbs-flexisel-item img {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width:100px;
+    max-height:45px;
+}
+
+/*** Navigation ***/
+
+.nbs-flexisel-nav-left,
+.nbs-flexisel-nav-right {
+    width: 22px;
+    height: 22px; 
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    opacity: 0.5;
+}
+
+.nbs-flexisel-nav-left {
+    left: 10px;
+    background: url(../img/arrow-prev.png) no-repeat;
+}
+
+.nbs-flexisel-nav-right {
+    right: 5px;
+    background: url(../img/arrow-next.png) no-repeat;
+}
+footer{
+	margin-top: 30px;
+	height: 500px;
+	background: #202020;
+	color: #c6c6c6;
+}
+footer .twitter{
+	padding-top: 30px;
+	width: 60%;
+	background: url(../img/twitter.png) no-repeat 0 45px;
+}
+footer .twitter p{
+	padding-left: 30px;
+	font-size: 13px;
+	line-height: 22px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+.twitter hr{
+	border: 0.1px solid #323232;
+}
+footer .contact{
+	margin-top: 60px;
+}
+footer .contact h5{
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+}
+footer .contact p{
+	padding-top: 10px;
+	font-size: 13px;
+	line-height: 22px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+footer .contact .col-md-4 a{
+	color: #c6c6c6;
+	font-size: 12px;
+	line-height: 22px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+footer .col-md-offset-1 .row{
+	padding-top: 19px;
+}
+footer .col-md-offset-1 .row input{
+	background: #202020;
+	border-radius: 0;
+	border: 1px solid #323232;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 12px;
+	color: #707070;
+}
+footer .row .form-control{
+	background: #202020;
+	border-radius: 0;
+	border: 1px solid #323232;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 12px;
+	color: #707070;
+}
+footer .row .btn{
+	width: 100%;
+	border-radius: 0;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 12px;
+	color: #fff;
+	background: #e25050;
+	border: none;
+	padding: 10px 0;
+}
+footer .col-md-offset-1 .row p{
+	line-height: 12px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #707070;
+}
+footer .copy_right{
+	padding-top: 110px;
+}
+footer .copy_right p{
+	line-height: 12px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #707070;
+}
+footer .copy_right a{
+	color: #e25050;
+}
+footer .copy_right a:hover{
+	color: #d14343;
+}
