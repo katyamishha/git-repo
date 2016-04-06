@@ -10,6 +10,39 @@
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+
+    $(window).load(function() {
+      $("#flexiselDemo3").flexisel({
+        visibleItems: 5,
+        animationSpeed: 1000,
+        autoPlay: true,
+        autoPlaySpeed: 3000,            
+        pauseOnHover: true,
+        enableResponsiveBreakpoints: true,
+        responsiveBreakpoints: { 
+          portrait: { 
+            changePoint:480,
+            visibleItems: 1
+          }, 
+          landscape: { 
+            changePoint:640,
+            visibleItems: 2
+          },
+          tablet: { 
+            changePoint:768,
+            visibleItems: 3
+          }
+        }
+      });
+
+
+    });
+  </script>
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,7 +52,7 @@
       <![endif]-->
     </head>
     <body>
-      <nav class="navbar navbar-default" role="navigation">
+      <nav class="navbar navbar-default">
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -42,7 +75,7 @@
       </nav>
       <div class="slider-bg clearfix">
         <div class="container ">
-          <a href="#" class="pull-right phone"><span class="glyphicon glyphicon-earphone"> </span> 1-800-555-1234</a>
+          <a href="+1-800-555-1234" class="pull-right phone"><span class="glyphicon glyphicon-earphone"> </span> 1-800-555-1234</a>
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -83,7 +116,7 @@
           </div>
         </div>
       </div>
-      <div class="info">
+      <div class="info clearfix">
         <div class="container">
           <div class="info-title">
             <h3>Welcome to fitness<span>time!</span></h3>
@@ -109,7 +142,7 @@
           </div>
         </div>
       </div>
-      <div class="trainers">
+      <div class="trainers clearfix">
         <div class="container">
           <h4>Super trainers</h4>
           <hr>
@@ -145,26 +178,26 @@
           </div>
         </div>
       </div>
-      <div class="gallery">
+      <div class="gallery clearfix">
         <div class="container">
           <h4>Our gallery</h4>
           <hr>
-          <p>Praesent posuere eros in quam dictum, quis dignissim odio suscipit. Integer luctus mi sit amet orci porttitor, at malesuada mauris sodales. Mauris vitae ipsum sed risus.</p>
+          <p>Praesent posuere eros in quam dictum, quis dignissim odio suscipit. Integer luctus mi sit amet orci porttitor, at malesuada mauris sodales. Mauris vitae ipsum sed risus.</p>
           <div class="row">
-            <div class="col-md-3"><img src="img/image1.jpg" alt=""></div>
-            <div class="col-md-3"><img src="img/image2.jpg" alt=""></div>
-            <div class="col-md-3"><img src="img/image3.jpg" alt=""></div>
-            <div class="col-md-3"><img src="img/image4.jpg" alt=""></div>
+            <div class="col-md-3"><img src="img/image1.jpg" alt="box"></div>
+            <div class="col-md-3"><img src="img/image2.jpg" alt="fitness"></div>
+            <div class="col-md-3"><img src="img/image3.jpg" alt="snowboard"></div>
+            <div class="col-md-3"><img src="img/image4.jpg" alt="mens_phisicks"></div>
           </div>
-          <div class="row">
-            <div class="col-md-3"><img src="img/image5.jpg" alt=""></div>
-            <div class="col-md-3"><img src="img/image6.jpg" alt=""></div>
-            <div class="col-md-3"><img src="img/image7.jpg" alt=""></div>
-            <div class="col-md-3"><img src="img/image8.jpg" alt=""></div>
+          <div class="row clearfix">
+            <div class="col-md-3"><img src="img/image5.jpg" alt="gimnastic"></div>
+            <div class="col-md-3"><img src="img/image6.jpg" alt="fitness"></div>
+            <div class="col-md-3"><img src="img/image7.jpg" alt="box"></div>
+            <div class="col-md-3"><img src="img/image8.jpg" alt="snowboard"></div>
           </div>
         </div>
       </div>
-      <div class="pricing">
+      <div class="pricing clearfix">
         <div class="container">
           <h4>Pricing and plans</h4>
           <hr>
@@ -172,7 +205,7 @@
             <div class="col-md-4 standart">
               <div class="row">
                 <div class="col-md-3">
-                  <img src="img/pencil.png" alt="">
+                  <img src="img/pencil.png" alt="pencil">
                   <h5>standard</h5>
                   <h2>$33<sup>.33</sup></h2>
                 </div>
@@ -190,7 +223,7 @@
             <div class="col-md-4  advanced">
               <div class="row">
                 <div class="col-md-3">
-                  <img src="img/paper plane.png" alt="">
+                  <img src="img/paper_plane.png" alt="paper_plane">
                   <h5>advanced</h5>
                   <h2>$52<sup>.60</sup></h2>
                 </div>
@@ -208,7 +241,7 @@
             <div class="col-md-4 business">
               <div class="row">
                 <div class="col-md-3">
-                  <img src="img/portfolio full.png" alt="">
+                  <img src="img/portfolio_full.png" alt="portfolio_full">
                   <h5>business</h5>
                   <h2>$84<sup>.20</sup></h2>
                 </div>
@@ -226,15 +259,62 @@
           </div>
         </div>
       </div>
-      <div class="partners">
+      <div class="partners clearfix">
         <div class="container">
           <h4>Partners</h4>
           <hr>
+          <ul id="flexiselDemo3">
+            <li><img src="img/brand_colored1.png" /></li>
+            <li><img src="img/brand_colored2.png" /></li>
+            <li><img src="img/brand_colored3.png" /></li>
+            <li><img src="img/brand_colored4.png" /></li>
+          </ul>
         </div>
+        <div class="clearfix"></div>
       </div>
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-      <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <script src="js/bootstrap.min.js"></script>
+      <footer>
+        <div class="container">
+          <div class="twitter">
+            <p>RT @collis: Trade growth ideas with other founders. Look for ways to cross promote. Small startups today may be big friends later. (9/10)<span>2 days ago</span></p>
+            <hr>
+          </div>
+          <div class="row contact">
+            <div class="col-md-4">
+              <h5>Contact info</h5>
+              <p>Ut volutpat consectetur aliquam. Curabitur auctor in nis ulum ornare. Sed consequat, augue condimentum fermentum gravida, metus elit vehicula dui.</p>
+              <a href="#"><span class="glyphicon glyphicon-phone"></span> +1 800 1234 56789</a>
+              <br>
+              <a href="#"><span class="glyphicon glyphicon-envelope"></span> support@website.com</a>
+            </div>
+            <div class="col-md-7 col-md-offset-1">
+            <h5>Send us a message</h5>
+            <div class="row">
+              <div class="col-xs-4">
+                <input type="text" class="form-control" placeholder="your name">
+              </div>
+              <div class="col-xs-4">
+                <input type="email" class="form-control" placeholder="email address">
+              </div>
+              <div class="col-xs-4">
+                <input type="text" class="form-control" placeholder="subject">
+              </div>
+            </div>
+            <div class="row">
+               <div class="col-xs-8">
+                <textarea class="form-control" rows="3">your name</textarea>
+              </div>
+              <div class="col-xs-4">
+                <button type="button" class="btn btn-default">Submit your massenger</button>
+                <p>Make sure you put a valid email.</p>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="copy_right">
+            <p class="pull-left"> &copy; 2013. All rights reserved. Designed by PSD Booster.</p>
+            <a href="#" class="pull-right">Back to up</a>
+          </div>
+        </div>
+      </footer>
     </body>
     </html>
