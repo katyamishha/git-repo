@@ -20,7 +20,7 @@
 	color: #fff;
 }
 .navbar-default .navbar-nav{
-	height: 100px;
+	height: auto;
 }
 .navbar-default .navbar-nav li{
 	padding-top: 25px;
@@ -177,6 +177,9 @@
 .trainers .row{
 	margin-top: 55px;
 }
+.trainers .row .col-md-3 img{
+		width: 260px;
+}
 .trainers .row .caption{
 	margin-top: 0;
 	box-sizing: border-box;
@@ -230,7 +233,7 @@
 }
 .pricing{
 	background: #e25050;
-	height: 390px;
+	height: auto;
 	color: #fff;
 }
 .pricing h4{
@@ -378,7 +381,7 @@
 }
 footer{
 	margin-top: 30px;
-	height: 500px;
+	height: auto;
 	background: #202020;
 	color: #c6c6c6;
 }
@@ -474,4 +477,113 @@ footer .copy_right a{
 }
 footer .copy_right a:hover{
 	color: #d14343;
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+	.trainers .row .col-md-3 img{
+		width: 230px;
+}
+.trainers .row .caption{
+	width: 230px;
+}
+.gallery .row .col-md-3 img{
+		width: 230px;
+}
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+	.navbar-default .navbar-nav li a{
+		padding: 10px 12px;
+	}
+	.trainers{
+		height: auto;
+		background: url(../img/base.jpg) repeat;
+	}
+	.trainers .container{
+		margin-bottom: 20px;
+	}
+	.trainers .row .col-sm-6 img{
+		margin: 0 70px ;
+	}
+	.trainers .row .col-sm-6 .caption{
+		margin: 0 70px ;
+	}
+	.trainers .row .col-md-3{
+		padding: 10px 0;
+	}
+	.gallery .row .col-sm-6 img{
+		margin: 0 70px ;
+	}
+	.gallery .row .col-sm-6{
+		padding: 10px 0;
+	}
+	.pricing .standart .col-sm-12,
+	.pricing .advanced .col-sm-12,
+	.pricing .business .col-sm-12{
+		padding-left: 40px;
+	}
+	.pricing .standart .col-sm-12 ul,
+	.pricing .advanced .col-sm-12 ul,
+	.pricing .business .col-sm-12 ul{
+		padding-left: 0;
+	}
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+	.navbar-default .navbar-brand{
+		padding-top: 15px;
+	}
+	.navbar-default .navbar-toggle{
+		color: #e25050;
+		border-color: #e25050 ;
+		background-color:  none;
+	}
+	.navbar-default .navbar-toggle:hover,
+	.navbar-default .navbar-toggle:focus{
+		border-color: #fff ;
+		background: #e25050;
+	}
+	.navbar-default .navbar-toggle .icon-bar{
+		background-color: #e25050;
+	}
+	.navbar-default .navbar-toggle:hover .icon-bar,
+	.navbar-default .navbar-toggle:focus .icon-bar{
+		background-color: #fff;
+	}
+	.navbar-default .navbar-nav ul{
+		margin-bottom: 20px;
+	}
+	.trainers .row .col-sm-6 img{
+		margin: 0 30% ;
+	}
+	.trainers .row .caption{
+		margin: 0 30% !important;;
+	}
+	.gallery .row .col-sm-6 img{
+		margin: 0 30% ;
+	}
+	.pricing .standart,
+	.pricing .advanced,
+	.pricing .business{
+		width: 90%;
+		margin: 10px auto;
+		padding: 1px;
+	}
+	footer .row .btn{
+		font-size: 10px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	footer .row .btn{
+		overflow: hidden;
+		font-size: 8px !important;
+	}
 }
