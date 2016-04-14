@@ -32,7 +32,7 @@ body{
 }
 .navbar-default{
 	background: #252e30;
-	height: 70px;
+	height: auto;
 	box-sizing: border-box;
 	text-transform: uppercase;
 	color: #fff;
@@ -76,12 +76,14 @@ p{
 	text-align: justify;
 }
 .about {
-	height:700px;
+	height:auto;
 	background: #f2f2f1;
+	padding-bottom: 20px;
+	box-sizing: border-box;
 }
 .about-me{
-padding-left: 120px;
-padding-top: 90px;
+padding-left: 140px;
+padding-top: 40px;
 padding-right: 60px;
 }
 
@@ -91,14 +93,20 @@ padding-right: 60px;
 	color: #566366;
 	font-weight: bold;
 }
+.about-me p{
+	margin-top: 40px;
+}
 .about-me .row1{
-	margin-top: 50px;
+	margin-top: 30px;
 }
 .about-me img{
 	float: left;
 	padding-right: 25px;
 	padding-top: 10px;
 	padding-bottom: 80px;
+}
+.about-me p{
+	overflow: hidden;
 }
 .skills{
 	padding-top: 140px;
@@ -222,6 +230,9 @@ h5{
 .portfolio .row{
 	margin: 20px 0;
 }
+.portfolio .col-sm-6{
+		margin: 10px 0;
+	}
 .portfolio .filters{
 	background: #252e30;
 	height: 300px;
@@ -230,14 +241,14 @@ h5{
 .portfolio .filters h5{
 	margin-top: 0;
 	color: #fff;
-	font-size: 18px;
-	padding-top: 50px;
+	font-size: 17px;
+	padding-top: 30px;
 	margin-left: 40px;
 	text-align: left;
 }
 .portfolio .filters li{
 	list-style: none;
-	font-size: 18px;
+	font-size: 16px;
 	text-align: left;
 	padding: 2px 0;
 }
@@ -250,6 +261,7 @@ h5{
 .portfolio .gallery{
 	position: relative;
 }
+
 .layer{
 	position: absolute;
 	top: 0;
@@ -264,6 +276,7 @@ h5{
 .portfolio .gallery:hover .layer{
 	opacity: 1;
 }
+
 .contact{
 	padding-top: 90px;
 	height: auto;
@@ -336,3 +349,133 @@ footer{
 .icon4:hover{background: url(../img/sprite-icony.png) no-repeat -102px -34px;}
 .icon5:hover{background: url(../img/sprite-icony.png) no-repeat -136px -34px;}
 .icon6:hover{background: url(../img/sprite-icony.png) no-repeat -170px -34px;}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px){
+ .title{
+ 	margin-top: 55%;
+ }
+ #header a{
+ 	font-size: 44px;
+ }
+#header button{
+	margin-left: 36%;
+}
+.navbar-default .navbar-nav>li>a{
+	padding: 28px 10px 15px;
+}
+ .about .col-md-5 img{
+ 	height: 550px;
+ 	margin-top: 80px;
+ }
+ .about-me{
+		padding-left: 100px;
+ 	}
+ 	.about p{
+ 	margin-top: 30px;
+ 	font-size: 16px;
+ }
+ .about-me h6{
+ 	padding-left: 10px;
+ }
+ 
+ .portfolio .col-md-4 img,
+ .portfolio .col-md-4 .filters{
+ 	width: 280px;
+ 	height: 233px;
+ }
+ .portfolio .gallery .layer{
+	width: 282px;
+	height: 233px;
+ }
+ .icons-sprite{
+ 	margin: 20px 0;
+ }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 992px){
+	.navbar-default .navbar-nav>li>a{
+		font-size: 12px;
+		padding: 28px 5px 15px;
+	}
+	#header a {
+		margin-left: 50px;
+	}
+	.about .col-md-5 img{
+		margin: 0;
+	}
+	#carousel-example-generic .carousel-indicators{
+		bottom: 10px;
+	}
+	.portfolio .col-sm-6:not(.gallery){
+		padding-left: 40px;
+	}
+	.layer{
+		left: 40px;
+	}
+	.filters{
+		margin-left: 40px;
+	}
+	.form-horizontal{
+	margin-top: 20px;
+	}
+	.icons-sprite{
+ 	margin-left: -65px;
+ }
+}
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+	#header a {
+
+		font-size: 1.6em;
+		margin-left: 3em;
+	}
+	#header button{
+	margin-left: 5em ;
+	}
+	.navbar-default .navbar-toggle{
+		color: #2ecc71;
+		border-color: #2ecc71 ;
+		background-color:  none;
+		margin-top: 15px;
+	}
+	.navbar-default .navbar-toggle:hover,
+	.navbar-default .navbar-toggle:focus{
+		border-color: #fff ;
+		background: #2ecc71;
+	}
+	.navbar-default .navbar-toggle .icon-bar{
+		background-color: #2ecc71;
+	}
+	.navbar-default .navbar-toggle:hover .icon-bar,
+	.navbar-default .navbar-toggle:focus .icon-bar{
+		background-color: #fff;
+	}
+	.goals .col-md-4{
+		padding: 0;
+	}
+	.about-me{
+		padding-left: 30px;
+		padding-right: 10px;
+	}
+	.about .col-md-5 img{
+ 		width: auto;
+ 		margin: 0;
+ 	}
+ 	#carousel-example-generic p{
+ 		margin-top: 10px;
+ 	}
+ .portfolio .col-sm-6:not(.gallery){
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+	}
+	.layer{
+		left: 50%;
+		margin-left: -140px;
+	}
+	.icons-sprite{
+ 	margin-left: 20%;
+ }
+	
+}
