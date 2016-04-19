@@ -405,18 +405,22 @@ a.close.hidden { display: none }
 }
 .discover{
 	background: #282f35;
-	height: 200px;
+	padding: 80px 0;
+	text-align: center;
 }
 .discover button{
-	margin-top: 75px;
-	margin-left: 80px;
+	letter-spacing: 3px;
 	background: transparent;
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 14px;
-	font-weight: bold;
-	border: 1px solid #fff;
-	padding: 15px 60px;
+	font-weight: 400;
+	border: 1px solid #bbb;
+	padding: 15px 50px;
+}
+.discover button:hover,
+.discover button:focus{
+	border: solid 1px #64c29e;
 }
 .form{
 	padding: 40px 0 110px 0;
@@ -502,4 +506,71 @@ a.close.hidden { display: none }
 }
 .pintrest-icon { 
 	background: url(../img/pun-icon.png); 
+}
+
+@media only screen and (max-width:1200px) {
+    nav { border-bottom: 0; }
+    nav ul { 
+    	display: none; 
+    	height: auto; 
+    }
+}
+@media screen and (max-width:1200px) {
+    p{font-size: 13px; }
+    .logo { display: none; }
+    .line { display: none; }
+    .arrow { display: none; }
+    nav { 
+    	height: auto; 
+    	width: 100%; 
+    	background: none; 
+    	margin: 70px 0 0 0; 
+    }
+    nav ul { 
+    	width: 100%; 
+    	display: block; 
+    	height: auto; 
+    	padding: 0; 
+    }
+    nav li { 
+    	width: 100%; 
+    	float: left; 
+    	position: relative; 
+    	text-align: center; 
+    }
+    nav ul li a { 
+    	width: 100%; 
+    	float: left; 
+    	position: relative; 
+    	padding: 25px 0; 
+    	text-align: center; 
+    	margin: 0px; 
+    }
+    nav ul li.point { display: none; }
+    .logo_1,
+    .logo_2,
+    .logo_3 { 
+    	position: absolute; 
+    	left: 50%; 
+    	top: 50%; 
+    }
+    .form button { margin-top: 10px; }
+    #footer p{ text-align: center; }
+    #footer ul { margin-top: 40px; }
+    #footer .adress p{text-align: center;}
+    .item .carousel-caption p{
+			font-size: 19px ;
+    }
+}
+
+
+@media screen and (max-width:772px) {
+    .item .carousel-caption p{
+			font-size: 17px ;
+    }
+}
+@media screen and (max-width:480px) {
+    .item .carousel-caption p{
+			font-size: 14px ;
+    }
 }
