@@ -1,0 +1,169 @@
+﻿#container
+        {
+            margin-top:200px;
+            
+        }
+        #slider
+        {
+            margin: 0 auto;
+			text-align:center;
+        }
+	
+.image-slider
+{
+	width: 980px;
+	height: 320px;
+	background: #ccc;
+	padding: 14px 16px 0px 16px;
+	position: relative; /*overflow: hidden;*/
+
+}
+.image-slider-back, .image-slider-forward
+{
+	float: left;
+	width: 23px;
+	height: 98px; /*background-color: #121212;*/
+	color: White;
+	position: relative;
+	top:40%;
+	cursor: pointer;
+}
+.image-slider-back
+{
+	background-image: url(../../www/img/left.png);
+	background-repeat: no-repeat;
+	background-position: left;
+}
+.image-slider-forward
+{
+	background-image: url(../../www/img/right.png);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.image-slider-contents
+{
+	width: 920px;
+	height: 300px;
+	float: left;
+	position: relative;
+	top: 0;
+	left: 10px;
+	overflow: hidden;
+}
+/*.image-slider-contents .contents-wrapper > div*/
+.image-slider-contents .contents-wrapper
+{
+	position: absolute;
+	padding-top: 15px;
+}
+.image-slider-contents .outer
+{
+	background-color: White;
+	float: left;
+	width: 270px;
+	height: 270px;
+	margin:0px 15px;
+	cursor:pointer;
+}
+.image-slider-contents .outer > div
+{
+	width: 270px;
+	height: 270px;
+}
+.image-slider-contents .outer > div img
+{
+	width: 270px;
+	height: 270px;
+	margin: 2px;
+	margin-top: -30px;
+}
+/*.image-slider-contents > div > div
+{
+	position: relative;
+	float: left;
+	width: 156px;
+	height: 86px;
+	margin-left: 6px;
+	margin-right: 6px;
+	padding: 2px;
+	background-color: White;
+}*/
+.image-slider-contents img
+{
+	width: 270px;
+	height: 270px;
+}
+
+.hidden
+{
+	display: none;
+}
+.visible
+{
+	display: block;
+}
+.thumbnail-active
+{
+	filter: alpha(opacity=100);
+	opacity: 1.0;
+	cursor: pointer;
+}
+.thumbnail-inactive
+{
+	filter: alpha(opacity=20);
+	opacity: 0.2;
+	cursor: pointer;
+}
+
+.preview
+{
+	position: absolute;
+	width: 334px;
+	height: 334px;
+}
+.preview .img-large
+{
+	width: 334px; /*height: 216px;*/
+	z-index: 1000;
+}
+.preview .img-large .left
+{
+	position: absolute;
+	left: 8px;
+	top: 140px;
+	width: 37px;
+	height: 68px;
+	z-index: 1000;
+	background: url(../../www/img/left.png) no-repeat;
+	cursor:pointer;
+}
+.preview .img-large .right
+{
+	position: absolute;
+	left: 290px;
+	top: 138px;
+	z-index: 1000;
+	width: 37px;
+	height: 68px;
+	background: url(../../www/img/right.png);
+	cursor:pointer;
+}
+.preview .img-large img
+{
+	width: 334px;
+	height: 334px;
+
+}
+.outer
+{
+	border: solid 1px black;
+}
+.outer.active
+{
+	border: solid 1px #B56161;
+	background-color: #F1D5CA;
+}
+.outer.active div span
+{
+	color: #F1D5CA;
+}

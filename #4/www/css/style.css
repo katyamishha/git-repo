@@ -1,0 +1,263 @@
+/*  Fonts  */
+@font-face {
+    font-family: 'lato_regular';
+    src: url('../fonts/lato-regular.eot');
+    src: url('../fonts/lato-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-regular.woff') format('woff'),
+         url('../fonts/lato-regular.ttf') format('truetype'),
+         url('../fonts/lato-regular.svg#LatoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'lato_bold';
+    src: url('../fonts/lato-bold.eot');
+    src: url('../fonts/lato-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-bold.woff') format('woff'),
+         url('../fonts/lato-bold.ttf') format('truetype'),
+         url('../fonts/lato-bold.svg#LatoBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'avantgardelt-extralight';
+    src: url('../fonts/avantgardelt-extralight.eot');
+    src: url('../fonts/avantgardelt-extralight.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avantgardelt-extralight.woff') format('woff'),
+         url('../fonts/avantgardelt-extralight.ttf') format('truetype'),
+         url('../fonts/avantgardelt-extralight.svg#avantgardelt-extralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'amplify';
+    src: url('../fonts/8211.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.clear{clear:both;}
+.wrapper{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background: #353434;
+}
+header .logo{
+    float: left;
+    margin-top: 21px;
+}
+header nav{
+    overflow: hidden;
+}
+nav ul{
+    list-style: none;
+}
+header nav ul li{
+    float: left;
+    margin-top: 15px;
+}
+header nav ul li a{
+    text-decoration: none;
+    font: 16px 'lato_regular', sans-serif;
+    padding: 0 30px;
+    color: #fff;
+}
+.social_icon{
+    float: right;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.social_icon li{
+    float: left;
+    margin-top: -25px;
+    padding: 0 5px;
+}
+.social_icon li a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: url('../images/sm.png') no-repeat;
+}
+.social_icon li a.fb{
+    background-position: 0 0;
+}
+.social_icon li a.tw{
+    background-position: -36px 0;
+}
+.social_icon li a.gplus{
+    background-position: -72px 0;
+}
+
+.caption{
+    margin: 0;
+    height: 580px;
+    background: url('../images/billboard.jpg') no-repeat;
+    background-size:cover ;
+}
+.title{
+    margin: 0;
+    padding-top: 230px;
+    padding-left: 700px;
+}
+.title p{
+    margin: 2px ;
+    padding: 15px 18px;
+    display: inline-block;
+    font: 30px 'avantgardelt-extralight', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.6);
+}
+.options{
+    margin-top: 100px;
+}
+.icon{
+    float: left;
+    margin-top: 25px;
+    margin-right: 40px;
+}
+.option{
+    float: left;
+    height: auto;
+    width: 31%;
+    margin: 0 1%;
+}
+.read_more{
+    overflow: hidden;
+    margin: 0;
+    color: #767676;
+}
+.read_more h3{
+    font: 22px 'lato_bold', sans-serif;
+}
+.read_more p{
+    font: 15px 'lato_regular', sans-serif;
+}
+.read_more a{
+    color: #767676;
+    text-decoration: none;
+}
+.read_more a span{
+    padding: 0 5px;
+}
+.testimonials{
+    margin-top: 140px;
+    text-align: center;
+}
+.testimonials h2{
+    text-transform: uppercase;
+    font: 26px 'lato_regular', sans-serif;
+    margin: 40px 0 ;
+    color: #4f4f4f;
+}
+.testimonials .test-text{
+    font: 18px/30px 'lato_regular', sans-serif;
+    margin: 40px 0 ;
+    letter-spacing: 1.5px;
+    color: #8f8e8e;
+}
+.testimonials p{
+    font: 16px 'lato_bold', sans-serif;
+    color: #696767;
+}
+.testimonials ul{
+    margin-left: 44.5%;
+    margin-top: 30px;
+}
+.testimonials ul li{
+    float: left;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 5px;
+    background: #dadada;
+}
+.testimonials ul li:first-child{
+    background: #bebebe;
+}
+.info{
+    margin-top: 140px;
+    height: 405px; 
+}
+.info-img{
+    float: left;
+}
+.info-text{
+    padding: 80px 40px 0 40px;
+    display: block;
+    overflow: hidden;
+    width: auto;
+    height: 325px;
+    background: #3b3b3b;
+    color: #fff;
+}
+.info-text h3{
+    font: 24px 'lato_bold', sans-serif;
+    text-transform: uppercase;
+}
+.info-text p{
+    font: 15px 'lato_regular', sans-serif;
+    letter-spacing: 1.5px;
+}
+.info-text a{
+    font: 15px 'lato_regular', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+}
+.buy{
+    text-align: center;
+    margin-top: 80px;
+}
+.buy h2{
+    font: 30px 'lato_bold', sans-serif;
+    text-transform: uppercase;
+    color: #6b6b6b;
+}
+.buy p{
+    font: 17px 'lato_regular', sans-serif;
+    letter-spacing: 1.5px;
+    color: #7f7d7d;
+}
+.buy button{
+    margin-top: 60px;
+    font: 20px 'lato_regular', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    background: #65bf95;
+    border: none;
+    padding: 20px 80px;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+}
+footer{
+    text-align: center;
+    margin-top: 150px;
+}
+footer img{
+    margin-bottom: 20px;
+}
+footer .rights, footer .rights a{
+    font: 14px 'lato_regular', sans-serif;
+    color: #3b3b3b;
+    margin-bottom: 30px;
+    
+}
+footer .rights a{
+    font-family: 'lato_bold';
+    text-decoration: none;
+}

@@ -1,0 +1,250 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/text.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-1.4.4.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+	<script src="js/image-slider.js" type="text/javascript"></script>
+
+	<link href="style/image-slider.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#slider').slider({ speed: 500 });
+
+		});       
+
+	</script>
+	<script type="text/javascript">
+        $(function() {
+            var $items = $('#vtab>ul>li');
+            $items.mouseover(function() {
+                $items.removeClass('selected');
+                $(this).addClass('selected');
+
+                var index = $items.index($(this));
+                $('#vtab>div').hide().eq(index).show();
+            }).eq(1).mouseover();
+        });
+    </script>
+</head>
+<body>
+	<header>
+		<div class="header">
+			<div class="wrapper">
+				<div class="logo">
+					<img src="img/Logo.png" alt="">
+				</div>
+				<ul class="navigation">
+					<li class="tw"></li>
+					<li class="fb"></li>
+					<li class="menu"></li>
+				</ul>
+			</div>
+		</div>
+		<div class="info">
+			<div class="wrapper">
+				<h3>Lorem Ipsum is simply dummy text of the printing industry</h3>
+				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+				<div class="watch">
+					<img src="img/Watch_Video.png" alt="">
+				</div>
+				<div class="chevron">
+					<img src="img/chevron-thin-down.png" alt="">
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="main">
+		<div class="wrapper">
+			<div class="services">
+				<h2>Services</h2>
+				<div class="columns">
+					<div class="column">
+						<div class="icon1">
+							<img src="img/tv.png" alt="">
+						</div>
+						<h5>Web design</h5>
+						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+					</div>
+					<div class="column">
+						<div class="icon2">
+							<img src="img/webdev.png" alt="">
+						</div>
+						<h5>Web development</h5>
+						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+					</div>
+					<div class="column">
+						<div class="icon3">
+							<img src="img/hosting.png" alt="">
+						</div>
+						<h5>Web hosting</h5>
+						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+					</div>
+					<div class="column">
+						<div class="icon4">
+							<img src="img/mobile.png" alt="">
+						</div>
+						<h5>Mobile.apps</h5>
+						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+					</div>
+					<div class="column">
+						<div class="icon5">
+							<img src="img/bispl.png" alt="">
+						</div>
+						<h5>Business plans</h5>
+						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+					</div>
+					<div class="column">
+						<div class="icon6">
+							<img src="img/marketing.png" alt="">
+						</div>
+						<h5>E-marketing</h5>
+						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<div class="projects">
+		<div class="wrapper">
+			<h2>Projects</h2>
+			<div id="container">
+			<div class="wrapper">
+				<div id="slider">
+					<div>
+						<img alt="" src="img/slider1.jpg" />
+					</div>
+					<div>
+						<img alt="" src="img/slider2.jpg" />
+					</div>
+					<div>
+						<img alt="" src="img/slider3.jpg" />
+					</div>
+					<div>
+						<img alt="" src="img/slider2.jpg" />
+					</div>
+					<div>
+						<img alt="" src="img/slider1.jpg" />
+					</div>
+					<div>
+						<img alt="" src="img/slider3.jpg" />
+					</div>
+					<div>
+						<img alt="" src="img/slider2.jpg" />
+					</div>
+					<div>
+						<img alt="" src="img/slider1.jpg" />
+					</div>
+					<div>
+						<img alt="" src="img/slider3.jpg" />
+					</div>             
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="testimonials">
+		<div class="wrapper">
+			<h2>testimonials</h2>
+			<div id="vtab">
+        <div>
+            <div class="slider">
+              <div class="dialog">
+                <p>Bruno is a great guy, I worked with him for couple of months and I really likes his work. He really loves his work and can work in extrem situation .. if you want to get something done .. ASK Ahmed!</p>
+            </div>
+            <div class="data">
+                <h6>Bruno Mazaratti</h6>
+                <p>Web Developer</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="slider">
+          <div class="dialog">
+            <p>Andrew is a great guy, I worked with him for couple of months and I really likes his work. He really loves his work and can work in extrem situation .. if you want to get something done .. ASK Ahmed!</p>
+        </div>
+        <div class="data">
+            <h6>Andrew Azmi</h6>
+            <p>SEO Editor at Danat eVentures</p>
+        </div>
+    </div>
+</div>
+<div>
+            <div class="slider">
+              <div class="dialog">
+                <p>Ildar is a great guy, I worked with him for couple of months and I really likes his work. He really loves his work and can work in extrem situation .. if you want to get something done .. ASK Ahmed!</p>
+            </div>
+            <div class="data">
+                <h6>Ildar Harimov</h6>
+                <p>Programming</p>
+            </div>
+        </div>
+    </div>
+    <div>
+            <div class="slider">
+              <div class="dialog">
+                <p>Dio is a great guy, I worked with him for couple of months and I really likes his work. He really loves his work and can work in extrem situation .. if you want to get something done .. ASK Ahmed!</p>
+            </div>
+            <div class="data">
+                <h6>Dio Mazaratti</h6>
+                <p>PHP Developer</p>
+            </div>
+        </div>
+    </div>
+    <div>
+            <div class="slider">
+              <div class="dialog">
+                <p>Fabio is a great guy, I worked with him for couple of months and I really likes his work. He really loves his work and can work in extrem situation .. if you want to get something done .. ASK Ahmed!</p>
+            </div>
+            <div class="data">
+                <h6>Fabio Mazaratti</h6>
+                <p>Web designer</p>
+            </div>
+        </div>
+    </div>
+<ul>
+    <li class="home selected"></li>
+    <li class="login"></li>
+    <li class="support"></li>
+    <li class="input"></li>
+    <li class="import"></li>
+</ul>
+</div>
+		</div>
+	</div>
+<div class="contact">
+	<div class="wrapper-2">
+		<h2>Contact us</h2>
+		<div class="social">
+		<ul>
+			<li class="fb-ic"></li>
+			<li class="tw-ic"></li>
+			<li class="googlepl"></li>
+			<li class="in"></li>
+			<li class="bl"></li>
+			<li class="behance"></li>
+			<li class="insta"></li>
+			<li class="none"></li>
+		</ul>
+		<div class="clearfix"></div>
+		</div>
+		<div class="forms">
+			<form action="#">
+				<input type="text" placeholder="John Smith" class="profile"><br>
+				<input type="text" placeholder="example@mail.com" class="mail"><br>
+				<textarea rows="9"></textarea><br>
+				<input type="submit" value="Send it"><br>
+			</form>
+		</div>
+	</div>
+</div>
+<footer>
+	<p>Barh &copy; 2014 . All Rights Reserved</p>
+</footer>
+</body>
+</html>
